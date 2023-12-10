@@ -34,14 +34,11 @@ This is a project for course ["Data in the Wild"](https://learnit.itu.dk/course/
     - Create a new word counter from two word counters (example: adding word counters for two songs or albums)
 - Transformation, analysis and visualisation of results in [transformation.ipynb](Transformation/transformation.ipynb)
 - Read results from the [Excel file](Transformation/golden_standard.xlsx) and transform to dataframe
-- Visualise the songs wich were the hardest to annotate manually (sample of 4) [plot](Transformation/plots/annotation_disagreement.png)
-- Represent each of the songs that was hard to annotate with words on TF-IDF vs Sentiment [plot](Transformation/plots/sugar-maroon_5.png)
+- Visualise the songs wich were the hardest to annotate manually (sample of 4)
+![alt text](Transformation/plots/annotation_disagreement.png)
+- Represent each of the songs that was hard to annotate with words on TF-IDF vs Sentiment
+![alt text](Transformation/plots/sugar-maroon_5.png)
 - Sentiment for above words in the plot was taken from the [lexicon](Transformation/vader_lexicon.txt) used by Vader model for sentiment analysis
-- Sample of 15 songs was used to visualise annotation choices chosen by humans, Vader model and the Transformer model [plot](Transformation/plots/manual_distilber_vader.png)
+- Sample of 15 songs was used to visualise annotation choices chosen by humans, Vader model and the Transformer model
+![alt text](Transformation/plots/manual_distilber_vader.png)
 - If we assume that manual annotation is our source of truth the Vader model reached **52.94%** of accuracy and Transformer model **72.06%**.
-
-### Tekstowo
-- Run parserTekstowo.py by passing the file name with the songs to scrape, i.e.   
-```bash
-python3 .\Tekstowo\parserTekstowo.py .\Spotify\songs\polski_hip_hop_klasyki_10-03-23.json
-```
